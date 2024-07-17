@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/spiral-matrix/">54. Spiral Matrix</a></h2><h3>Medium</h3><hr><div><p>Given an <code>m x n</code> <code>matrix</code>, return <em>all elements of the</em> <code>matrix</code> <em>in spiral order</em>.</p>
+<h2><a href="https://leetcode.com/problems/spiral-matrix/">54. Spiral Matrix</a></h2><h3>Medium</h3><hr><p>Given an <code>m x n</code> <code>matrix</code>, return <em>all elements of the</em> <code>matrix</code> <em>in spiral order</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
@@ -24,4 +24,3 @@
 	<li><code>1 &lt;= m, n &lt;= 10</code></li>
 	<li><code>-100 &lt;= matrix[i][j] &lt;= 100</code></li>
 </ul>
-</div>
