@@ -1,5 +1,3 @@
-// https://leetcode.com/problems/add-binary
-
 class Solution {
 public:
     string addBinary(string a, string b) {
@@ -10,8 +8,6 @@ public:
             res=to_string(sum%2)+res;
             carry=sum/2;
         }
-        if(carry)
-            res="1"+res;
         return res;
     }
 };
