@@ -1,19 +1,16 @@
-// https://leetcode.com/problems/spiral-matrix
-
 class Solution {
 public:
     vector<int> spiralOrder(vector<vector<int>>& matrix) {
-        int n=matrix.size()-1,m=matrix[0].size()-1;
-        vector<int>res;
-        int l=0,r=m,t=0,b=n;
+        vector<int> res;
+        int m=matrix.size(),n=matrix[0].size(),t=0,b=m-1,l=0,r=n-1;
         while(t<=b&&l<=r){
-            for(int i=l;i<=r;i++)res.push_back(matrix[t][i]);
+            for(int j=l;j<=r;++j)res.push_back(matrix[t][j]);
             t++;
-            for(int i=t;i<=b;i++)res.push_back(matrix[i][r]);
+            for(int i=t;i<=b;++i)res.push_back(matrix[i][r]);
             r--;
-            if(t<=b)for(int i=r;i>=l;i--)res.push_back(matrix[b][i]);
+            if(t<=b)for(int j=r;j>=l;--j)res.push_back(matrix[b][j]);
             b--;
-            if(l<=r)for(int i=b;i>=t;i--)res.push_back(matrix[i][l]);
+            if(l<=r)for(int i=b;i>=t;--i)res.push_back(matrix[i][l]);
             l++;
         }
         return res;
