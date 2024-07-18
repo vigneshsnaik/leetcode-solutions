@@ -1,5 +1,3 @@
-// https://leetcode.com/problems/middle-of-the-linked-list
-
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -13,8 +11,6 @@
 class Solution {
 public:
     ListNode* middleNode(ListNode* head) {
-        if(!head) return NULL;
-        if(!head->next) return head;
         ListNode* hare=head;
         ListNode* tortoise=head;
         while (hare&&hare->next){
