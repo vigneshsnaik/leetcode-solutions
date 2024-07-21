@@ -1,5 +1,3 @@
-// https://leetcode.com/problems/climbing-stairs
-
 class Solution {
 public:
     vector<int>val={1,2};
