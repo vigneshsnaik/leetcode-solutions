@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/valid-palindrome-ii/">680. Valid Palindrome II</a></h2><h3>Easy</h3><hr><div><p>Given a string <code>s</code>, return <code>true</code> <em>if the </em><code>s</code><em> can be palindrome after deleting <strong>at most one</strong> character from it</em>.</p>
+<h2><a href="https://leetcode.com/problems/valid-palindrome-ii/">680. Valid Palindrome II</a></h2><h3>Easy</h3><hr><p>Given a string <code>s</code>, return <code>true</code> <em>if the </em><code>s</code><em> can be palindrome after deleting <strong>at most one</strong> character from it</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
@@ -30,4 +30,3 @@
 	<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>s</code> consists of lowercase English letters.</li>
 </ul>
-</div>
