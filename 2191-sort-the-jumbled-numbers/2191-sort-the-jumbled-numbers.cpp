@@ -12,9 +12,12 @@ public:
         return res;
     }
     vector<int> sortJumbled(vector<int>& mapping, vector<int>& nums) {
-        sort(nums.begin(), nums.end(), [&](int n1, int n2) {
-            return value(mapping, n1) < value(mapping, n2);
-        });
+        unordered_map<int, int> values;
+        for (int num : nums) {
+            values[num] = value(mapping, num);
+        }
+        sort(nums.begin(), nums.end(),
+             [&](int n1, int n2) { return values[n1] < values[n2]; });
         return nums;
     }
 };
