@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/validate-binary-search-tree/">98. Validate Binary Search Tree</a></h2><h3>Medium</h3><hr><div><p>Given the <code>root</code> of a binary tree, <em>determine if it is a valid binary search tree (BST)</em>.</p>
+<h2><a href="https://leetcode.com/problems/validate-binary-search-tree/">98. Validate Binary Search Tree</a></h2><h3>Medium</h3><hr><p>Given the <code>root</code> of a binary tree, <em>determine if it is a valid binary search tree (BST)</em>.</p>
 
 <p>A <strong>valid BST</strong> is defined as follows:</p>
 
@@ -31,4 +31,3 @@
 	<li>The number of nodes in the tree is in the range <code>[1, 10<sup>4</sup>]</code>.</li>
 	<li><code>-2<sup>31</sup> &lt;= Node.val &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
-</div>
