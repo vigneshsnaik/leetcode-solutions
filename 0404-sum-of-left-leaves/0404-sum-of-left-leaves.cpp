@@ -1,5 +1,3 @@
-// https://leetcode.com/problems/sum-of-left-leaves
-
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
