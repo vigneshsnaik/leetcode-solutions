@@ -7,7 +7,7 @@ public:
             while (!s.empty() && heights[i] <= heights[s.top()])
                 s.pop();
             if (s.empty())
-                NSL[i] = 0;
+                NSL[i] = -1;
             else
                 NSL[i] = s.top();
             s.push(i);
@@ -29,6 +29,8 @@ public:
         return NSR;
     }
     int largestRectangleArea(vector<int>& heights) {
+        if (heights.size() == 1)
+            return heights[0];
         vector<int> NSR = getNSR(heights);
         vector<int> NSL = getNSL(heights);
         int maxi = 0;
