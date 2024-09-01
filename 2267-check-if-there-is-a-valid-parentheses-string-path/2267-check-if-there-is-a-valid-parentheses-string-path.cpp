@@ -1,5 +1,3 @@
-// https://leetcode.com/problems/check-if-there-is-a-valid-parentheses-string-path
-
 class Solution {
 public:
     vector<vector<vector<int>>> dp;
