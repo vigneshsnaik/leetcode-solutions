@@ -1,5 +1,3 @@
-// https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk
-
 class Solution {
 public:
     int chalkReplacer(vector<int>& chalk, int k) {
