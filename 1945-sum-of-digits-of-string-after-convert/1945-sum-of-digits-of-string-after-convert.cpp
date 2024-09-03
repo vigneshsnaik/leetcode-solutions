@@ -7,13 +7,11 @@ public:
                          : c < 't' ? c - 'a' - 8
                                    : c - 'a' - 17;
         }
-        cout<<res;
-        int num = res;
         while (--k) {
             int sum = 0;
-            while (num) {
-                sum += (num % 10);
-                num /= 10;
+            while (res) {
+                sum += (res % 10);
+                res /= 10;
             }
             res = sum;
         }
