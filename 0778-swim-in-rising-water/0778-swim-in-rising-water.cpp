@@ -1,5 +1,3 @@
-// https://leetcode.com/problems/swim-in-rising-water
-
 class Solution {
 public:
     vector<vector<vector<int>>> dp;
