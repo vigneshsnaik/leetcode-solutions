@@ -3,7 +3,7 @@ public:
     int robotSim(vector<int>& commands, vector<vector<int>>& obstacles) {
         unordered_set<string> obs;
         for (auto obstacle : obstacles) {
-            obs.insert(to_string(obstacle[0])+" "+to_string(obstacle[1]));
+            obs.insert(to_string(obstacle[0]) + " " + to_string(obstacle[1]));
         }
         int x = 0, y = 0;
         int maxDistance = 0;
@@ -21,7 +21,8 @@ public:
                 for (int i = 0; i < c; ++i) {
                     int xx = x + dx;
                     int yy = y + dy;
-                    if (obs.find(to_string(xx)+" "+to_string(yy)) != obs.end())
+                    if (obs.find(to_string(xx) + " " + to_string(yy)) !=
+                        obs.end())
                         break;
                     x = xx;
                     y = yy;
