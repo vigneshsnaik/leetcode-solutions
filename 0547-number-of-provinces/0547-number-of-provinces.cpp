@@ -1,5 +1,3 @@
-// https://leetcode.com/problems/number-of-provinces
-
 class Solution {
 public:
     vector<bool>cities;
