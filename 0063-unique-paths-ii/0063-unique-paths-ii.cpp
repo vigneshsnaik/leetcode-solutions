@@ -1,13 +1,9 @@
-// https://leetcode.com/problems/unique-paths-ii
-
 class Solution {
 public:
     vector<vector<int>> dp;
     int m, n;
     int solve(vector<vector<int>>& obstacleGrid, int x, int y) {
-        if (x == m || y == n)
-            return 0;
-        if (obstacleGrid[x][y])
+        if (x == m or y == n or obstacleGrid[x][y])
             return 0;
         if (dp[x][y])
             return dp[x][y];
