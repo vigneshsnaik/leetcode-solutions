@@ -7,11 +7,11 @@ public:
             mod = mod >= 0 ? mod : mod + k;
             count[mod]++;
         }
-        for(int i:count){
-            cout<<i<<endl;
+        for (int i : count) {
+            cout << i << endl;
         }
-        if (k == 2) {
-            return !count[1] % 2;
+        if (count[0] % 2 != 0) {
+            return false;
         }
         for (int i = 1; i <= k / 2; i++) {
             if (count[i] != count[k - i]) {
