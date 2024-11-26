@@ -2,7 +2,7 @@ class Solution {
 public:
     int findChampion(int n, vector<vector<int>>& edges) {
         vector<bool> inward(n, false);
-        for (auto edge : edges) {
+        for (vector<int>& edge : edges) {
             inward[edge[1]] = true;
         }
         int champion = -1;
