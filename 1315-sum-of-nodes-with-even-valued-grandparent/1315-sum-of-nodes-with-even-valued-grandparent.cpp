@@ -18,17 +18,17 @@ public:
             return;
         }
         if (root->val % 2 == 0) {
-            decide |= 4;
+            decide |= 1;
         }
-        if (decide & 1) {
+        if (decide & 0b100) {
             res += root->val;
         }
-        int newDecide = decide >> 1;
+        int newDecide = decide << 1;
         solve(root->left, newDecide);
         solve(root->right, newDecide);
     }
     int sumEvenGrandparent(TreeNode* root) {
-        solve(root, root->val % 2 == 0 ? 4 : 0);
+        solve(root, root->val % 2 == 0 ? 1 : 0);
         return res;
     }
 };
