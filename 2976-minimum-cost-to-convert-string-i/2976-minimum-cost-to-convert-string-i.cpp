@@ -1,10 +1,12 @@
 class Solution {
 public:
-    long long minimumCost(string source, string target, vector<char>& original, vector<char>& changed, vector<int>& cost) {
+    long long minimumCost(string source, string target, vector<char>& original,
+                          vector<char>& changed, vector<int>& cost) {
         vector<vector<int>> d(26, vector<int>(26, INT_MAX));
         int N = source.size();
         for (int i = 0; i < cost.size(); i++) {
-            d[original[i] - 'a'][changed[i] - 'a'] = cost[i];
+            d[original[i] - 'a'][changed[i] - 'a'] =
+                min(cost[i], d[original[i] - 'a'][changed[i] - 'a']);
         }
         for (int i = 0; i < 26; ++i) {
             d[i][i] = 0;
